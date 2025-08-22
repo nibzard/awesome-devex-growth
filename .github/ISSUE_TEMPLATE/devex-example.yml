@@ -1,0 +1,118 @@
+name: 🚀 DevEx Example Submission
+description: Submit a DevEx practice or tool that demonstrably drives business growth
+title: "[SUBMISSION] Add [Company/Product Name] - [Category]"
+labels: ["submission", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing to Awesome DevEx Growth! 
+        
+        📖 **Please read [DEFINITIONS.md](https://github.com/nikola/awesome-devex-growth/blob/main/DEFINITIONS.md) first** to understand impact levels and requirements.
+
+  - type: input
+    id: company_name
+    attributes:
+      label: Company/Product Name
+      description: The name of the company or product
+      placeholder: e.g., "Stripe API Documentation"
+    validations:
+      required: true
+
+  - type: input
+    id: main_url
+    attributes:
+      label: Main Resource URL
+      description: Link to the main resource (documentation, API, tool, etc.)
+      placeholder: https://
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Which category best fits this example?
+      options:
+        - Documentation Excellence
+        - Developer Onboarding  
+        - API Design & Developer Experience
+        - CLI & SDK Experience
+        - Community & Developer Relations
+        - Internal Developer Platforms
+        - Developer Tools & Automation
+    validations:
+      required: true
+
+  - type: dropdown
+    id: impact_level
+    attributes:
+      label: Impact Level
+      description: What level of impact does this have? (See DEFINITIONS.md)
+      options:
+        - "🚀 Proven Impact - Documented significant business growth (>20% metrics)"
+        - "📊 Measured Impact - Quantified developer productivity gains"
+        - "⭐ Community Favorite - High adoption or industry recognition"
+    validations:
+      required: true
+
+  - type: input
+    id: evidence_url
+    attributes:
+      label: Evidence URL
+      description: Link to case study, metrics, research, or social proof
+      placeholder: https://
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence_description
+    attributes:
+      label: Evidence Description
+      description: Brief description of the evidence (e.g., "40% YoY growth", "55% faster development", "100M+ users")
+      placeholder: e.g., "Stripe's developer-first approach drove 40% YoY growth according to their earnings report"
+    validations:
+      required: true
+
+  - type: textarea
+    id: key_features
+    attributes:
+      label: Key Features
+      description: 3-4 bullet points of features that impact developer experience
+      placeholder: |
+        - Interactive API explorer with live requests
+        - Progressive disclosure of complexity  
+        - Real code examples in multiple languages
+        - Comprehensive error handling documentation
+    validations:
+      required: true
+
+  - type: textarea
+    id: why_awesome
+    attributes:
+      label: Why it's awesome
+      description: Brief explanation of how this drives growth through better DevEx
+      placeholder: "Developers can implement payments in minutes, not days. The documentation quality directly correlates with faster integration and higher developer adoption."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: validation
+    attributes:
+      label: Submission Checklist
+      description: Please confirm the following
+      options:
+        - label: I have read the [DEFINITIONS.md](https://github.com/nikola/awesome-devex-growth/blob/main/DEFINITIONS.md) file
+          required: true
+        - label: The evidence URL is publicly accessible and supports the impact claim
+          required: true
+        - label: This example focuses on developer experience (not just general business tools)
+          required: true
+        - label: I am not submitting a duplicate of an existing entry
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        **Next Steps:** Our community will review your submission and provide feedback. If approved, we'll add it to the main README. Thank you for contributing! 🎉

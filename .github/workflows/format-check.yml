@@ -1,0 +1,89 @@
+name: Validate Format
+
+on:
+  pull_request:
+    paths:
+      - 'README.md'
+  workflow_dispatch:
+
+jobs:
+  format-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Get changed lines
+        id: changes
+        run: |
+          # Get the diff of README.md
+          git diff HEAD~1 HEAD README.md > changes.diff
+          echo "Changes found:"
+          cat changes.diff
+
+      - name: Check entry format
+        run: |
+          # Check if new entries follow the required format
+          if grep -q "^+### \[" changes.diff; then
+            echo "Found new entries, checking format..."
+            
+            # Extract new entries (lines starting with +### [)
+            grep "^+### \[" changes.diff | while read -r line; do
+              entry_line="${line#+}"
+              echo "Checking entry: $entry_line"
+              
+              # Check if it has the required markdown link format
+              if [[ ! $entry_line =~ ^\#\#\#\ \[.*\]\(.*\)$ ]]; then
+                echo "❌ Entry doesn't match required format: $entry_line"
+                echo "Expected format: ### [Company/Product Name](link-to-resource)"
+                exit 1
+              else
+                echo "✅ Entry format looks good: $entry_line"
+              fi
+            done
+            
+            # Check for required sections in new entries
+            if grep -A 10 "^+### \[" changes.diff | grep -q "+\*\*Impact:\*\*"; then
+              echo "✅ Found Impact section"
+            else
+              echo "❌ Missing **Impact:** section in new entries"
+              exit 1
+            fi
+            
+            if grep -A 10 "^+### \[" changes.diff | grep -q "+\*\*Evidence:\*\*"; then
+              echo "✅ Found Evidence section"
+            else
+              echo "❌ Missing **Evidence:** section in new entries"
+              exit 1
+            fi
+            
+            echo "✅ All format checks passed!"
+          else
+            echo "No new entries found, skipping format check"
+          fi
+
+      - name: Comment on PR
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const message = `## ❌ Format Check Failed
+            
+            Your submission doesn't follow the required format. Please check:
+            
+            1. **Entry format:** \`### [Company/Product Name](link-to-resource)\`
+            2. **Required sections:** \`**Impact:**\` and \`**Evidence:**\`
+            3. **Impact levels:** Use 🚀, 📊, or ⭐
+            
+            📖 See [DEFINITIONS.md](https://github.com/${context.repo.owner}/${context.repo.repo}/blob/main/DEFINITIONS.md) for detailed requirements.
+            
+            Please fix the format and push again. Thanks! 🙏`;
+            
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: message
+            });
