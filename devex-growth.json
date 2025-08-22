@@ -1,0 +1,385 @@
+{
+  "title": {
+    "heading": "Awesome DevEx Growth",
+    "subtitle": "A curated list of developer experience (DevEx) practices, tools, and examples that demonstrably drive business growth."
+  },
+  "metadata": {
+    "total_examples": 16,
+    "last_updated": "2025-08-22",
+    "description": "Companies with exceptional developer experiences achieve 60% higher revenue growth than those that don't. This list focuses specifically on DevEx initiatives with proven growth impact."
+  },
+  "impact_levels": {
+    "proven": {
+      "symbol": "🚀",
+      "name": "Proven Impact",
+      "description": "Documented significant business growth (>20% metrics)"
+    },
+    "measured": {
+      "symbol": "📊", 
+      "name": "Measured Impact",
+      "description": "Quantified developer productivity gains"
+    },
+    "favorite": {
+      "symbol": "⭐",
+      "name": "Community Favorite", 
+      "description": "High adoption or industry recognition"
+    }
+  },
+  "categories": [
+    {
+      "id": "documentation-excellence",
+      "name": "Documentation Excellence",
+      "description": "Outstanding documentation that drives developer adoption and reduces time-to-integration",
+      "companies": [
+        {
+          "name": "Stripe",
+          "description": "Stripe Documentation provides an interactive API explorer with progressive complexity disclosure",
+          "link": "https://stripe.com/docs",
+          "impact": "proven",
+          "evidence": "Stripe's dev-first approach drove 40%+ YoY growth",
+          "evidence_link": "https://stripe.com/newsroom",
+          "logo": "./public/images/stripe.svg",
+          "key_features": [
+            "Interactive API explorer with live requests",
+            "Progressive disclosure of complexity", 
+            "Real code examples in multiple languages",
+            "Comprehensive error handling documentation"
+          ],
+          "why_awesome": "Developers can implement payments in minutes, not days. The documentation quality directly correlates with faster integration and higher developer adoption.",
+          "tags": ["payments", "api", "documentation", "interactive"]
+        },
+        {
+          "name": "Supabase", 
+          "description": "Supabase Documentation features auto-generated API docs and framework-specific quickstarts",
+          "link": "https://supabase.com/docs",
+          "impact": "proven",
+          "evidence": "100M+ requests per month growth",
+          "evidence_link": "https://supabase.com/blog/supabase-series-b",
+          "logo": "./public/images/supabase.svg",
+          "key_features": [
+            "Auto-generated API docs from database schema",
+            "Built-in examples for every framework",
+            "One-click deployment guides", 
+            "Real-time collaborative editing"
+          ],
+          "why_awesome": "Reduces time-to-first-success from hours to minutes with framework-specific quickstarts.",
+          "tags": ["backend", "database", "documentation", "quickstart"]
+        }
+      ]
+    },
+    {
+      "id": "developer-onboarding",
+      "name": "Developer Onboarding",
+      "description": "Exceptional first-time developer experiences that minimize friction",
+      "companies": [
+        {
+          "name": "Docker Desktop",
+          "description": "Docker Desktop provides an intuitive GUI for container management with zero-config setup",
+          "link": "https://www.docker.com/products/docker-desktop/",
+          "impact": "measured",
+          "evidence": "Improved developer satisfaction scores",
+          "evidence_link": "https://suyash-joshi.medium.com/developer-experience-on-boarding-done-right-case-study-7c0d31a529d8",
+          "logo": "./public/images/docker.svg",
+          "key_features": [
+            "No sign-up required for initial use",
+            "Interactive tutorial wizard",
+            "Pre-configured development environments",
+            "Visual container management"
+          ],
+          "why_awesome": "Developers can containerize applications without learning complex CLI commands first.",
+          "tags": ["containers", "onboarding", "gui", "tutorial"]
+        },
+        {
+          "name": "Vercel",
+          "description": "Vercel's Zero-Config Deployment eliminates deployment complexity with Git integration",
+          "link": "https://vercel.com/docs",
+          "impact": "proven",
+          "evidence": "Deployed 1B+ times, 50x faster adoption",
+          "evidence_link": "https://vercel.com/blog/vercel-funding-series-c",
+          "logo": "./public/images/vercel.svg",
+          "key_features": [
+            "Git integration with automatic deployments",
+            "Zero configuration for popular frameworks",
+            "Instant preview deployments for PRs",
+            "Built-in performance monitoring"
+          ],
+          "why_awesome": "Eliminates deployment complexity, allowing developers to focus on building.",
+          "tags": ["deployment", "git", "zero-config", "preview"]
+        }
+      ]
+    },
+    {
+      "id": "api-design-dx",
+      "name": "API Design & Developer Experience",
+      "description": "APIs designed with developer experience as a first-class concern",
+      "companies": [
+        {
+          "name": "Twilio",
+          "description": "Twilio API Design features consistent RESTful patterns and comprehensive SDKs",
+          "link": "https://www.twilio.com/docs/api", 
+          "impact": "proven",
+          "evidence": "$2.8B revenue driven by developer adoption",
+          "evidence_link": "https://www.twilio.com/company",
+          "logo": "./public/images/twilio.svg",
+          "key_features": [
+            "RESTful design with consistent patterns",
+            "Comprehensive SDKs for 7+ languages",
+            "Interactive API console",
+            "Webhook debugging tools"
+          ],
+          "why_awesome": "Consistent, predictable API patterns reduce integration time from weeks to hours.",
+          "tags": ["api", "rest", "sdk", "webhooks"]
+        },
+        {
+          "name": "GitHub",
+          "description": "GitHub API offers both GraphQL and REST options with comprehensive documentation",
+          "link": "https://docs.github.com/en/rest",
+          "impact": "favorite",
+          "evidence": "Powers 100M+ developers worldwide", 
+          "evidence_link": "https://github.blog/2023-01-25-100-million-developers-and-counting/",
+          "logo": "./public/images/github.svg",
+          "key_features": [
+            "GraphQL and REST options",
+            "Comprehensive rate limiting documentation",
+            "Webhook event simulation", 
+            "Fine-grained personal access tokens"
+          ],
+          "why_awesome": "Flexible API options allow developers to choose the best approach for their use case.",
+          "tags": ["api", "graphql", "rest", "webhooks", "auth"]
+        }
+      ]
+    },
+    {
+      "id": "cli-sdk-experience",
+      "name": "CLI & SDK Experience", 
+      "description": "Command-line tools and SDKs that feel intuitive and powerful",
+      "companies": [
+        {
+          "name": "Heroku",
+          "description": "Heroku CLI defined the modern PaaS experience with git-based deployments",
+          "link": "https://devcenter.heroku.com/articles/heroku-cli",
+          "impact": "favorite",
+          "evidence": "Defined the modern PaaS experience",
+          "evidence_link": "https://www.heroku.com/what",
+          "logo": "./public/images/heroku.svg",
+          "key_features": [
+            "Single command deployment (git push heroku main)",
+            "Built-in add-on marketplace",
+            "Real-time log streaming",
+            "Environment variable management"
+          ],
+          "why_awesome": "Abstracts infrastructure complexity while maintaining developer control.",
+          "tags": ["cli", "paas", "deployment", "git"]
+        },
+        {
+          "name": "Netlify",
+          "description": "Netlify CLI provides local-to-production parity with integrated serverless functions",
+          "link": "https://cli.netlify.com/",
+          "impact": "measured",
+          "evidence": "1M+ sites deployed, rapid developer adoption",
+          "evidence_link": "https://www.netlify.com/blog/netlify-raises-105m-series-d/",
+          "logo": "./public/images/netlify.svg",
+          "key_features": [
+            "Local development environment matching production",
+            "One-command deployments",
+            "Branch deployments for testing",
+            "Integrated serverless functions"
+          ],
+          "why_awesome": "Local-to-production parity eliminates 'works on my machine' issues.",
+          "tags": ["cli", "jamstack", "serverless", "local-dev"]
+        }
+      ]
+    },
+    {
+      "id": "community-devrel",
+      "name": "Community & Developer Relations",
+      "description": "Building thriving developer communities that scale support and engagement", 
+      "companies": [
+        {
+          "name": "Discord",
+          "description": "Discord Developer Community fosters bot creation through active community support",
+          "link": "https://discord.com/developers/docs",
+          "impact": "proven",
+          "evidence": "15M+ bots created, driving user engagement",
+          "evidence_link": "https://discord.com/company",
+          "logo": "./public/images/discord.svg",
+          "key_features": [
+            "Active developer Discord server",
+            "Regular community events and hackathons",
+            "Developer spotlight program",
+            "Comprehensive bot examples"
+          ],
+          "why_awesome": "Strong community support reduces time-to-resolution for developer issues.",
+          "tags": ["community", "bots", "events", "support"]
+        },
+        {
+          "name": "Stack Overflow",
+          "description": "Stack Overflow provides community-driven Q&A with reputation-based quality control",
+          "link": "https://stackoverflow.com/",
+          "impact": "favorite",
+          "evidence": "50M+ unique monthly visitors",
+          "evidence_link": "https://stackoverflow.blog/2019/02/28/the-2019-stack-overflow-developer-survey-results-are-in/",
+          "logo": "./public/images/stackoverflow.svg",
+          "key_features": [
+            "Community-driven Q&A platform",
+            "Reputation system for quality content",
+            "Tag-based organization",
+            "Integration with development tools"
+          ],
+          "why_awesome": "Peer-to-peer learning scales developer support beyond what companies can provide.",
+          "tags": ["community", "qa", "reputation", "peer-learning"]
+        }
+      ]
+    },
+    {
+      "id": "internal-dev-platforms",
+      "name": "Internal Developer Platforms",
+      "description": "Self-service platforms that accelerate internal developer productivity",
+      "companies": [
+        {
+          "name": "Netflix",
+          "description": "Netflix Developer Portal provides self-service infrastructure with automated pipelines",
+          "link": "https://netflixtechblog.com/",
+          "impact": "measured", 
+          "evidence": "4-5x faster feature delivery",
+          "evidence_link": "https://www.contino.io/insights/developer-experience/",
+          "logo": "./public/images/netflix.svg",
+          "key_features": [
+            "Self-service infrastructure provisioning",
+            "Automated CI/CD pipelines",
+            "Centralized logging and monitoring",
+            "Service catalog and discovery"
+          ],
+          "why_awesome": "Developers can provision production-ready services in minutes, not weeks.",
+          "tags": ["internal", "self-service", "cicd", "infrastructure"]
+        },
+        {
+          "name": "Spotify Backstage",
+          "description": "Spotify Backstage provides a unified developer portal with service catalog and templates",
+          "link": "https://backstage.io/",
+          "impact": "measured",
+          "evidence": "Adopted by 100+ companies",
+          "evidence_link": "https://backstage.io/blog/2023/03/07/backstage-turns-three",
+          "logo": "./public/images/backstage.svg",
+          "key_features": [
+            "Unified service catalog",
+            "Template-driven service creation",
+            "Plugin ecosystem",
+            "Infrastructure as code integration"
+          ],
+          "why_awesome": "Reduces cognitive load by providing a single pane of glass for all developer needs.",
+          "tags": ["internal", "catalog", "templates", "plugins"]
+        }
+      ]
+    },
+    {
+      "id": "dev-tools-automation",
+      "name": "Developer Tools & Automation",
+      "description": "Tools that automate repetitive tasks and enhance developer productivity",
+      "companies": [
+        {
+          "name": "GitHub Copilot",
+          "description": "GitHub Copilot provides AI-powered code completion with context awareness",
+          "link": "https://github.com/features/copilot",
+          "impact": "proven",
+          "evidence": "55% faster coding reported by developers",
+          "evidence_link": "https://github.blog/2022-09-07-research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/",
+          "logo": "./public/images/copilot.svg", 
+          "key_features": [
+            "AI-powered code completion",
+            "Context-aware suggestions",
+            "Multiple language support",
+            "IDE integration"
+          ],
+          "why_awesome": "Accelerates development and reduces boilerplate code writing.",
+          "tags": ["ai", "code-completion", "productivity", "ide"]
+        },
+        {
+          "name": "Linear",
+          "description": "Linear Issue Tracking optimizes for speed with keyboard-first interface",
+          "link": "https://linear.app/",
+          "impact": "measured",
+          "evidence": "Used by high-growth startups for 2x faster development cycles",
+          "evidence_link": "https://linear.app/customers",
+          "logo": "./public/images/linear.svg",
+          "key_features": [
+            "Sub-200ms response times",
+            "Keyboard-first interface", 
+            "Git integration with automatic status updates",
+            "Minimal, distraction-free UI"
+          ],
+          "why_awesome": "Speed and simplicity keep developers in flow state.",
+          "tags": ["issue-tracking", "speed", "keyboard", "git"]
+        }
+      ]
+    }
+  ],
+  "research_links": [
+    {
+      "title": "Companies with better DevEx achieve 60% higher revenue growth",
+      "url": "https://queue.acm.org/detail.cfm?id=3595878",
+      "type": "research"
+    },
+    {
+      "title": "High-performance organizations deploy 106x more frequently", 
+      "url": "https://cloud.google.com/blog/products/devops-sre/announcing-dora-2021-accelerate-state-of-devops-report",
+      "type": "research"
+    },
+    {
+      "title": "Developers influence 57% of technology purchases",
+      "url": "https://stackoverflow.blog/2023/05/08/stack-overflow-developer-survey-2023-results-are-in/",
+      "type": "research"
+    }
+  ],
+  "case_studies": [
+    {
+      "title": "TELUS streamlined productivity by consolidating DevOps tools",
+      "url": "https://github.com/customer-stories/telus",
+      "company": "TELUS"
+    },
+    {
+      "title": "Duolingo empowers engineers with AI-powered development", 
+      "url": "https://github.com/customer-stories/duolingo",
+      "company": "Duolingo"
+    },
+    {
+      "title": "Docker's developer onboarding drives product adoption",
+      "url": "https://suyash-joshi.medium.com/developer-experience-on-boarding-done-right-case-study-7c0d31a529d8",
+      "company": "Docker"
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "DevEx: What Actually Drives Productivity",
+      "url": "https://queue.acm.org/detail.cfm?id=3595878",
+      "source": "ACM Queue"
+    },
+    {
+      "name": "SPACE Framework for Developer Productivity", 
+      "url": "https://queue.acm.org/detail.cfm?id=3454124",
+      "source": "ACM Queue"
+    },
+    {
+      "name": "Developer Experience Metrics Framework",
+      "url": "https://www.infoq.com/articles/devex-metrics-framework/",
+      "source": "InfoQ"
+    }
+  ],
+  "reports": [
+    {
+      "name": "Stack Overflow Developer Survey",
+      "url": "https://survey.stackoverflow.co/2023/",
+      "year": "2023"
+    },
+    {
+      "name": "State of DevOps Report",
+      "url": "https://cloud.google.com/blog/products/devops-sre/announcing-dora-2021-accelerate-state-of-devops-report", 
+      "year": "2021"
+    },
+    {
+      "name": "Developer Experience Report",
+      "url": "https://jellyfish.co/blog/devex-101-understanding-developer-experience-and-why-it-matters/",
+      "source": "Jellyfish"
+    }
+  ]
+}

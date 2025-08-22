@@ -1,32 +1,32 @@
-# Awesome DevEx Growth [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Total Examples](https://img.shields.io/badge/examples-16-brightgreen.svg)](#contents) [![Last Updated](https://img.shields.io/github/last-commit/nikola/awesome-devex-growth.svg)](#contents)
+# Awesome DevEx Growth [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Total Examples](https://img.shields.io/badge/examples-14-brightgreen.svg)](#contents) [![Last Updated](https://img.shields.io/github/last-commit/nikola/awesome-devex-growth.svg)](#contents)
 
 > A curated list of developer experience (DevEx) practices, tools, and examples that demonstrably drive business growth.
 
-Companies with exceptional developer experiences achieve [60% higher revenue growth](https://queue.acm.org/detail.cfm?id=3595878) than those that don't. This list focuses specifically on DevEx initiatives with proven growth impact.
+Companies with exceptional developer experiences achieve 60% higher revenue growth than those that don't. This list focuses specifically on DevEx initiatives with proven growth impact.
 
 📖 **See [DEFINITIONS.md](DEFINITIONS.md) for impact levels, evidence requirements, and submission guidelines.**
 
 ## Quick Search Tips
 💡 Use GitHub's search or Ctrl+F to find companies quickly  
-🏢 **Popular companies:** Stripe, GitHub, Vercel, Docker, Netlify, Discord, Linear  
-🏷️ **By impact:** `🚀` (proven) · `📊` (measured) · `⭐` (community favorite)
+🏢 **Popular companies:** Stripe, Supabase, Docker Desktop, Vercel, Twilio, GitHub, Heroku, Netlify, Discord, Stack Overflow, Netflix, Spotify Backstage, GitHub Copilot, Linear  
+🏷️ **By impact:** 🚀 (proven) · 📊 (measured) · ⭐ (community favorite)
 
 ## Contents
 
 - [Documentation Excellence](#documentation-excellence)
 - [Developer Onboarding](#developer-onboarding)
-- [API Design & Developer Experience](#api-design--developer-experience)
-- [CLI & SDK Experience](#cli--sdk-experience)
-- [Community & Developer Relations](#community--developer-relations)
-- [Internal Developer Platforms](#internal-developer-platforms)
-- [Developer Tools & Automation](#developer-tools--automation)
+- [API Design & Developer Experience](#api-design-dx)
+- [CLI & SDK Experience](#cli-sdk-experience)
+- [Community & Developer Relations](#community-devrel)
+- [Internal Developer Platforms](#internal-dev-platforms)
+- [Developer Tools & Automation](#dev-tools-automation)
 - [Growth Evidence & Case Studies](#growth-evidence--case-studies)
 - [Research & Metrics](#research--metrics)
 
 ## Legend
 
 - 🚀 **Proven Impact** - Documented significant business growth (>20% metrics)
-- 📊 **Measured Impact** - Quantified developer productivity gains
+- 📊 **Measured Impact** - Quantified developer productivity gains  
 - ⭐ **Community Favorite** - High adoption or industry recognition
 
 [↑ Back to top](#contents)
@@ -37,7 +37,7 @@ Companies with exceptional developer experiences achieve [60% higher revenue gro
 
 [↑ Back to top](#contents)
 
-### [Stripe Documentation](https://stripe.com/docs)
+### [Stripe](https://stripe.com/docs)
 **Impact:** 🚀 **Evidence:** [Stripe's dev-first approach drove 40%+ YoY growth](https://stripe.com/newsroom)
 **Key Features:**
 - Interactive API explorer with live requests
@@ -46,7 +46,7 @@ Companies with exceptional developer experiences achieve [60% higher revenue gro
 - Comprehensive error handling documentation
 **Why it's awesome:** Developers can implement payments in minutes, not days. The documentation quality directly correlates with faster integration and higher developer adoption.
 
-### [Supabase Documentation](https://supabase.com/docs)
+### [Supabase](https://supabase.com/docs)
 **Impact:** 🚀 **Evidence:** [100M+ requests per month growth](https://supabase.com/blog/supabase-series-b)
 **Key Features:**
 - Auto-generated API docs from database schema
@@ -59,7 +59,7 @@ Companies with exceptional developer experiences achieve [60% higher revenue gro
 
 [↑ Back to top](#contents)
 
-### [Docker Desktop Onboarding](https://www.docker.com/products/docker-desktop/)
+### [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 **Impact:** 📊 **Evidence:** [Improved developer satisfaction scores](https://suyash-joshi.medium.com/developer-experience-on-boarding-done-right-case-study-7c0d31a529d8)
 **Key Features:**
 - No sign-up required for initial use
@@ -68,7 +68,7 @@ Companies with exceptional developer experiences achieve [60% higher revenue gro
 - Visual container management
 **Why it's awesome:** Developers can containerize applications without learning complex CLI commands first.
 
-### [Vercel's Zero-Config Deployment](https://vercel.com/docs)
+### [Vercel](https://vercel.com/docs)
 **Impact:** 🚀 **Evidence:** [Deployed 1B+ times, 50x faster adoption](https://vercel.com/blog/vercel-funding-series-c)
 **Key Features:**
 - Git integration with automatic deployments
@@ -81,7 +81,7 @@ Companies with exceptional developer experiences achieve [60% higher revenue gro
 
 [↑ Back to top](#contents)
 
-### [Twilio API Design](https://www.twilio.com/docs/api)
+### [Twilio](https://www.twilio.com/docs/api)
 **Impact:** 🚀 **Evidence:** [$2.8B revenue driven by developer adoption](https://www.twilio.com/company)
 **Key Features:**
 - RESTful design with consistent patterns
@@ -90,7 +90,7 @@ Companies with exceptional developer experiences achieve [60% higher revenue gro
 - Webhook debugging tools
 **Why it's awesome:** Consistent, predictable API patterns reduce integration time from weeks to hours.
 
-### [GitHub API](https://docs.github.com/en/rest)
+### [GitHub](https://docs.github.com/en/rest)
 **Impact:** ⭐ **Evidence:** [Powers 100M+ developers worldwide](https://github.blog/2023-01-25-100-million-developers-and-counting/)
 **Key Features:**
 - GraphQL and REST options
@@ -103,29 +103,29 @@ Companies with exceptional developer experiences achieve [60% higher revenue gro
 
 [↑ Back to top](#contents)
 
-### [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
+### [Heroku](https://devcenter.heroku.com/articles/heroku-cli)
 **Impact:** ⭐ **Evidence:** [Defined the modern PaaS experience](https://www.heroku.com/what)
 **Key Features:**
-- Single command deployment (`git push heroku main`)
+- Single command deployment (git push heroku main)
 - Built-in add-on marketplace
 - Real-time log streaming
 - Environment variable management
 **Why it's awesome:** Abstracts infrastructure complexity while maintaining developer control.
 
-### [Netlify CLI](https://cli.netlify.com/)
+### [Netlify](https://cli.netlify.com/)
 **Impact:** 📊 **Evidence:** [1M+ sites deployed, rapid developer adoption](https://www.netlify.com/blog/netlify-raises-105m-series-d/)
 **Key Features:**
 - Local development environment matching production
 - One-command deployments
 - Branch deployments for testing
 - Integrated serverless functions
-**Why it's awesome:** Local-to-production parity eliminates "works on my machine" issues.
+**Why it's awesome:** Local-to-production parity eliminates 'works on my machine' issues.
 
 ## Community & Developer Relations
 
 [↑ Back to top](#contents)
 
-### [Discord Developer Community](https://discord.com/developers/docs)
+### [Discord](https://discord.com/developers/docs)
 **Impact:** 🚀 **Evidence:** [15M+ bots created, driving user engagement](https://discord.com/company)
 **Key Features:**
 - Active developer Discord server
@@ -147,7 +147,7 @@ Companies with exceptional developer experiences achieve [60% higher revenue gro
 
 [↑ Back to top](#contents)
 
-### [Netflix Developer Portal](https://netflixtechblog.com/)
+### [Netflix](https://netflixtechblog.com/)
 **Impact:** 📊 **Evidence:** [4-5x faster feature delivery](https://www.contino.io/insights/developer-experience/)
 **Key Features:**
 - Self-service infrastructure provisioning
@@ -178,7 +178,7 @@ Companies with exceptional developer experiences achieve [60% higher revenue gro
 - IDE integration
 **Why it's awesome:** Accelerates development and reduces boilerplate code writing.
 
-### [Linear Issue Tracking](https://linear.app/)
+### [Linear](https://linear.app/)
 **Impact:** 📊 **Evidence:** [Used by high-growth startups for 2x faster development cycles](https://linear.app/customers)
 **Key Features:**
 - Sub-200ms response times
@@ -207,8 +207,8 @@ Companies with exceptional developer experiences achieve [60% higher revenue gro
 
 ### DevEx Frameworks
 - [DevEx: What Actually Drives Productivity (ACM Queue)](https://queue.acm.org/detail.cfm?id=3595878)
-- [SPACE Framework for Developer Productivity](https://queue.acm.org/detail.cfm?id=3454124)
-- [Developer Experience Metrics Framework](https://www.infoq.com/articles/devex-metrics-framework/)
+- [SPACE Framework for Developer Productivity (ACM Queue)](https://queue.acm.org/detail.cfm?id=3454124)
+- [Developer Experience Metrics Framework (InfoQ)](https://www.infoq.com/articles/devex-metrics-framework/)
 
 ### Industry Reports
 - [Stack Overflow Developer Survey](https://survey.stackoverflow.co/2023/)
@@ -231,10 +231,14 @@ We especially welcome:
 
 ## Company Index
 
-**A-D:** Discord, Docker  
-**G-L:** GitHub, Heroku, Linear  
-**N-S:** Netflix, Netlify, Spotify, Stack Overflow, Stripe, Supabase  
-**T-Z:** Twilio, Vercel  
+**D-H:** Discord, Docker Desktop  
+**G-L:** GitHub, GitHub Copilot  
+**H-N:** Heroku  
+**L-S:** Linear  
+**N-T:** Netflix, Netlify  
+**S-V:** Spotify Backstage, Stack Overflow, Stripe, Supabase  
+**T-V:** Twilio  
+**V:** Vercel  
 
 [↑ Back to top](#contents)
 
